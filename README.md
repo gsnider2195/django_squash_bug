@@ -1,0 +1,1 @@
+Django Squash Migrations Bug
