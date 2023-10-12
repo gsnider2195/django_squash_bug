@@ -8,6 +8,8 @@ git checkout squashed
 ./manage.py migrate
 ```
 
+## Explanation
+
 You can see the problem if you run `./manage.py showmigrations --plan --verbosity 2` in the main branch:
 
 ```
@@ -50,3 +52,8 @@ However, when django's migration dependency graph generator encounters the squas
 [ ]  app1.0101_squashed ... (app2.0004)  # loop ends here, 0101_squashed must run after app2.0004 based on its dependencies
 ```
 ```
+
+## Related Issues
+
+- https://code.djangoproject.com/ticket/23337
+- https://code.djangoproject.com/ticket/26407
