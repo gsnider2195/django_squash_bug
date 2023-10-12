@@ -50,7 +50,7 @@ However, when django's migration dependency graph generator encounters the squas
 [ ]  app2.0003 ... (app2.0002)
 [ ]  app2.0004 ... (app2.0003)
 [ ]  app1.0101_squashed ... (app2.0004)  # loop ends here, 0101_squashed must run after app2.0004 based on its dependencies
-```
+...
 ```
 
 ## Related Issues
